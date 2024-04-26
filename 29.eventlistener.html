@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+            .p1
+            {
+                color: red;
+                font-size: 50px;
+                font-weight: bold;
+
+            }
+    </style>
+</head>
+<body>
+     
+     
+       <h1>This is testing eventlistener</h1>
+       <script>
+
+          var my=document.querySelector("h1");
+          my.addEventListener("mouseover",func);
+        
+          function func()
+          {
+              my.classList.add("p1");
+          }
+          my.addEventListener("mouseout",function(){my.classList.remove("p1") });
+
+       
+
+           
+        </script>
+
+</body>
+</html>

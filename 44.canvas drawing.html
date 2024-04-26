@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <canvas id="mycanvas" height="400px" width="400px"></canvas>
+    
+       <script>
+
+             var v=document.querySelector("#mycanvas");
+             var cntx=v.getContext("2d");
+             cntx.lineWidth=3;
+             cntx.strokeStyle="black";
+             cntx.strokeRect(10,10,352,252);
+             cntx.fillStyle="green";
+             cntx.fillRect(12,12,350,250);
+             var cnx=v.width/2;
+             var cny=v.height/2;
+             cntx.beginPath();
+             cntx.arc(175,145,50,0,2*Math.PI,false);
+             cntx.fillStyle="red";
+             cntx.fill();
+             
+
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .btn
+          {
+              height: 50px;
+              width: 70px;
+              background-color: blue;
+              color: white;
+          }
+          .ani
+          {
+            background-color: red;
+          }
+
+    </style>
+</head>
+<body>
+    
+       <button class="btn" id="A">A</button>
+       <button class="btn" id="B">B</button>
+       <button class="btn" id="C">C</button>
+       <script>
+
+            for(var i=0;i<3;i++)
+            {
+                document.querySelectorAll(".btn")[i].addEventListener("click",function(){
+                
+                      var text=this.innerHTML;
+                    
+                        var audio=new Audio(text+".mp3");
+                        audio.play();
+                        playani(text);
+
+
+
+
+
+                });
+                
+            }            
+            function playani(text)
+            {
+                 var my=document.querySelector("#"+text);
+                 my.classList.add("ani");
+                 setTimeout(function(){my.classList.remove("ani");},3000);
+            }
+
+      </script>
+</body>
+</html>

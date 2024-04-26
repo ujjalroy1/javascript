@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       
+      <h1 class="cl1">This main head</h1>
+      <button class="mybt">button1</button>
+      <button class="mybt">button2</button>
+      <button class="mybt">button3</button>
+
+      <script>
+       
+         document.querySelectorAll(".mybt")[0].addEventListener("click",function(){
+            var text=this.innerHTML;
+            document.querySelector(".cl1").innerHTML=text+" is clicked";
+         })
+         document.querySelectorAll(".mybt")[1].addEventListener("click",function(){
+            var text=this.innerHTML;
+            document.querySelector(".cl1").innerHTML=text+" is clicked";
+         })
+         document.querySelectorAll(".mybt")[2].addEventListener("click",function(){
+            var text=this.innerHTML;
+            document.querySelector(".cl1").innerHTML=text+" is clicked";
+         })
+
+
+      </script>
+</body>
+</html>

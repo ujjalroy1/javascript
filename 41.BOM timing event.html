@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+      <button class="btn">submit</button>
+      <p class="p1"></p>
+      
+    <script>
+         
+          
+          var b=document.querySelector(".btn");
+         
+          b.addEventListener("click",func);
+          var p2=document.querySelector(".p1");
+          function func()
+          {
+           
+              p2.innerHTML="Submited";
+            setTimeout(func1,3000);
+          }
+      function func1()
+      {
+       
+          p2.innerHTML="";
+         
+      }
+
+    </script>
+   
+          
+</body>
+</html>

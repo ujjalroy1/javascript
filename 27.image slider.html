@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        
+     <button onclick="pre()">prev</button>
+     <img src="pic1.jpg" alt=" " id="imgs" height="300" width="350">
+     <button onclick="nex()">next</button>
+     <script>
+          var photo=["pic1.jpg","pic2.jpg","pic3.jpg","pic4.jpg","pic5.jpg","pic1.jpg"];
+          var my=document.querySelector("#imgs");
+          var cnt=0;
+          function pre()
+          { 
+            cnt--;
+            cnt=(cnt+6)%6;
+
+             my.src=photo[cnt];
+          }
+          function nex()
+          { 
+            cnt++;
+            cnt=(cnt+6)%6;
+
+             my.src=photo[cnt];
+          }
+
+            
+   
+      
+
+      </script>
+    
+
+
+</body>
+</html>

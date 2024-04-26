@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="alert('I am onclick')">submit</button>
+    <button onclick="show()">log in</button>   
+    <p onclick="show1()">this p</p>
+    
+    <button onclick="change1()">change</button>
+    <h1 id="h1id"></h1>
+     <script>
+
+          function show()
+          {
+              alert('hello vai');
+          }
+          function show1()
+          {
+              alert('hello P');
+          }
+          function change1()
+          {
+              var my=document.querySelector("#h1id");
+              my.innerHTML="click on button 3";
+          }
+         
+       
+     </script>
+      
+</body>
+</html>

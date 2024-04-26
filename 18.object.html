@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        
+    <script>
+    //         var student={
+    //             name:"ujjal",
+    //             age:23,
+    //             gendar:"male"
+
+
+
+    //         }
+    //    document.write(student.name+"<br>");
+    //    document.write(student.age+"<br>");
+    //    document.write(student.gendar+"<br>");
+         
+
+        function Student1(name,roll,gpa)
+        {
+             this.name=name;
+             this.roll=roll;
+             this.gpa=gpa;
+             this.dis=function()
+             {
+                document.write(this.name+"<br>");
+               document.write(this.roll+"<br>");
+               document.write(this.gpa+"<br>");
+             }
+        }
+        var s=new Student1("ujjal",1,3.99);
+        document.write(s.name+"<br>");
+        document.write(s.roll+"<br>");
+         document.write(s.gpa+"<br>");
+
+         var s1=new Student1("ujjal",10,3.99);
+         s1.dis();
+
+    </script>
+
+
+       
+</body>
+</html>

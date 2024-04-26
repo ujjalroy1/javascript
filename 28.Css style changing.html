@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           .p1
+           {
+              font-size: 50px;
+              font-weight: bolder;
+              font-style: italic;
+              color: brown;
+           }
+
+
+     </style>
+</head>
+<body>
+      
+         <p class="p2">This is main paragraph</p>
+         <button onclick="add()">Add style</button>
+         <button onclick="remove()">Remove style</button>
+        <script>
+           
+           function add()
+           {
+               var my=document.querySelector(".p2");
+               my.classList.add("p1");
+           }
+           function remove()
+           {
+               var my=document.querySelector(".p2");
+               my.classList.remove("p1");
+           }
+           
+        </script>
+</body>
+</html>

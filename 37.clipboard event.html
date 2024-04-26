@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       
+
+     <input type="text">
+     <p>hi</p>
+     <script>
+         var v=document.querySelector("input");
+         v.addEventListener("copy",function(){
+        
+              var p1=document.querySelector("p");
+              p1.innerText="copied";
+
+
+         });
+         v.addEventListener("cut",function(){
+        
+        var p1=document.querySelector("p");
+        p1.innerHTML="cut";
+
+
+   });
+   v.addEventListener("paste",function(){
+        
+        var p1=document.querySelector("p");
+        p1.innerHTML="paste";
+
+
+   });  
+
+
+
+     </script>
+        
+     
+</body>
+</html>
